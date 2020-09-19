@@ -7,4 +7,13 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
+  view:string;
+
+  setView(view:string){
+    this.view=view;
+  }
+
+  constructor(){
+    this.view='details';
+  }
 }
